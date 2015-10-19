@@ -4,6 +4,7 @@ function StaffMember(name,discountPercent){
     this.discountPercent = discountPercent;
 }
 var me=new StaffMember('nunu',20); //会员实例
+
 //收银系统
 var cashRegister = {
     total:0,
@@ -29,6 +30,7 @@ var cashRegister = {
         this.total-=this.total*(employee.discountPercent/100);
     }
 };
+
 //模拟收银
 cashRegister.scan('eggs',1);
 cashRegister.scan('milk',1);
